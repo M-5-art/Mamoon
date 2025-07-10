@@ -1,93 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mamon Brews – Kombucha from Arunachal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"/>
   <style>
+    /* Smooth font rendering */
+    body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+    /* Colors */
+    :root {
+      --bg: #F2EFE6;
+      --dark: #3A4D39;
+      --accent: #8B5E3C;
+      --highlight: #A7C957;
+      --amber: #C98C5D;
+    }
+
     body {
-      margin: 0;
-      font-family: 'Georgia', serif;
-      background-color: #F2EFE6;
-      color: #3A4D39;
+      margin: 0; font-family: 'Open Sans', sans-serif;
+      background: var(--bg); color: var(--dark);
+      line-height: 1.6; font-size: 18px;
     }
+
     header {
-      background-color: #8B5E3C;
+      background: var(--accent);
       color: white;
-      padding: 2rem;
       text-align: center;
+      padding: 3rem 1rem;
+      position: sticky; top: 0;
     }
+
+    header h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    header p { opacity: 0.9; margin-top: 0.5rem; }
+
     section {
-      padding: 2rem;
       max-width: 800px;
-      margin: auto;
+      margin: 3rem auto;
+      padding: 0 1rem;
     }
-    h1, h2 {
-      color: #3A4D39;
+
+    h2 {
+      font-family: 'Merriweather', serif;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      border-bottom: 4px solid var(--amber);
+      display: inline-block;
+      padding-bottom: 0.2rem;
     }
+
     .facts {
-      background-color: #A7C957;
-      color: #1B1B1B;
-      border-radius: 10px;
-      padding: 1rem;
-      margin: 1rem 0;
+      background: var(--highlight);
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 1.5rem 0;
     }
+    .facts ul { margin: 0; padding-left: 1.2rem; }
+    .facts li { margin-bottom: 0.5rem; }
+
     footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #C98C5D;
+      background: var(--amber);
       color: white;
-      margin-top: 3rem;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+    }
+
+    /* Subtle fade-in scroll effect */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s forwards ease-out;
+    }
+
+    @keyframes fadeInUp {
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
 
-  <header>
+  <header class="fade-in" style="animation-delay:0.2s">
     <h1>Mamon Brews</h1>
     <p>Where Tradition Meets Fermentation</p>
   </header>
 
-  <section>
-    <h2>Welcome to Mamon Brews</h2>
-    <p>Brewed with love in Arunachal – India's untouched paradise.</p>
+  <section class="fade-in" style="animation-delay:0.4s">
+    <h2>Welcome</h2>
+    <p>Brewed with love in Arunachal – India's untouched paradise. Discover the natural effervescence of kombucha crafted in the Eastern Himalayas.</p>
   </section>
 
-  <section>
-    <h2>🍵 What is Kombucha?</h2>
-    <p>Kombucha is a fermented tea rich in probiotics and antioxidants. At Mamon Brews, we handcraft each bottle in small batches using traditional techniques and local ingredients.</p>
+  <section class="fade-in" style="animation-delay:0.6s">
+    <h2>What is Kombucha?</h2>
+    <p>A fermented tea rich in probiotics and antioxidants. Each bottle is a small-batch craft, blending traditional methods with local ingredients.</p>
   </section>
 
-  <section class="facts">
-    <h2>🌿 Kombucha Fun Facts</h2>
+  <section class="facts fade-in" style="animation-delay:0.8s">
+    <h2>🍃 Fun Facts</h2>
     <ul>
-      <li>Kombucha dates back to 220 B.C. in ancient China.</li>
-      <li>Known as the "Tea of Immortality."</li>
-      <li>Rich in probiotics, B-vitamins, and enzymes.</li>
-      <li>The natural fizz comes from fermentation!</li>
+      <li>Dates back to 220 B.C. in ancient China – the “Tea of Immortality.”</li>
+      <li>Contains live probiotics, B‑vitamins, enzymes, and organic acids.</li>
+      <li>Its natural fizz comes purely from fermentation!</li>
     </ul>
   </section>
 
-  <section>
-    <h2>🧭 Why Arunachal is Perfect for Brewing</h2>
-    <p>Located in the Eastern Himalayas, Arunachal Pradesh offers:
-      <ul>
-        <li>Pure mountain spring water</li>
-        <li>Cool, natural fermentation-friendly climate</li>
-        <li>Rich organic farming culture</li>
-        <li>Peaceful, pollution-free surroundings</li>
-      </ul>
-    </p>
+  <section class="fade-in" style="animation-delay:1s">
+    <h2>Why Arunachal?</h2>
+    <p>This Himalayan region offers:</p>
+    <ul>
+      <li>Pure spring water for clean brewing</li>
+      <li>Cool climate ideal for fermentation</li>
+      <li>Rich organic farms supplying fresh fruits & herbs</li>
+      <li>Peaceful, pollution-free environment</li>
+    </ul>
   </section>
 
-  <section>
-    <h2>📖 A Brief History of Kombucha</h2>
-    <p>Kombucha originated in Northeast China around 220 B.C. and was prized for its healing properties. It traveled through Russia and Europe and now finds a vibrant home in Arunachal through Mamon Brews.</p>
+  <section class="fade-in" style="animation-delay:1.2s">
+    <h2>A Brief History</h2>
+    <p>Originating in Northeast China (~220 B.C.), kombucha spread through Russia & Europe, and now thrives in Arunachal with Mamon Brews reviving this ancient tradition.</p>
   </section>
 
-  <footer>
-    <p>© 2025 Mamon Brews | Handcrafted in Arunachal Pradesh</p>
+  <footer class="fade-in" style="animation-delay:1.4s">
+    <p>© 2025 Mamon Brews | Handcrafted in Arunachal Pradesh</p>
   </footer>
 
 </body>
 </html>
+
