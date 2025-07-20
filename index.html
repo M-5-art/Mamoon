@@ -1,116 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mamon Brews</title>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background-color: #f3f1e7;
-      color: #3c3b32;
-    }
-    header {
-      background-color: #6b705c;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      font-family: 'Libre Baskerville', serif;
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    .section-title {
-      font-size: 1.8rem;
-      font-family: 'Libre Baskerville', serif;
-      margin-bottom: 1rem;
-    }
-    .flavours li, .benefits li {
-      margin-bottom: 0.5rem;
-    }
-    .highlight {
-      background-color: #ffe8d6;
-      padding: 1rem;
-      border-radius: 8px;
-      margin: 1rem 0;
-    }
-    footer {
-      background-color: #6b705c;
-      color: white;
-      text-align: center;
-      padding: 1.5rem 1rem;
-    }
-    .contact-info a {
-      color: white;
-      text-decoration: none;
-    }
+    :root {
+      --beige: #f2efe8;
+      --earth-green: #264027;
+      --dark-text: #333;
+      --accent: #a67c52;
+    }body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--beige);
+  color: var(--dark-text);
+}
+
+header {
+  background-color: var(--earth-green);
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.logo {
+  width: 120px;
+  margin: 1rem auto;
+}
+
+section {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--earth-green);
+}
+
+.flavor {
+  background-color: white;
+  border-left: 4px solid var(--earth-green);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+footer {
+  background-color: #e4e1d7;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+
+.menu-button, .contact-button {
+  background-color: var(--earth-green);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  margin: 0.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.newsletter input[type="email"] {
+  padding: 0.6rem;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+.newsletter button {
+  padding: 0.6rem 1rem;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
   </style>
-</head>
-<body>
+</head><body>
   <header>
+    <img class="logo" src="MamonBrewsLogo.jpg" alt="Mamon Brews Logo" />
     <h1>Mamon Brews</h1>
-    <p>Handcrafted Kombucha from Arunachal</p>
-  </header>
-
-  <section>
-    <h2 class="section-title">Our Kombucha Menu</h2>
-    <ul class="flavours">
-      <li>Kombucha Classic</li>
-      <li>Kombucha Bay Leaf</li>
-      <li>Kombucha Ginger Lemon</li>
-      <li>Kombucha Mango</li>
-      <li><em>Exciting new flavours coming soon!</em></li>
-    </ul>
-  </section>
-
-  <section>
-    <h2 class="section-title">Why Kombucha?</h2>
-    <div class="highlight">
-      You’re sipping on real KOMBUCHA – a living tea, slow-brewed with love and purpose. It contains beneficial acids, vitamins, antioxidants, and probiotics that support your gut health, digestion, and immunity.
+    <p>Nature in Every Sip - Kombucha from Arunachal</p>
+  </header>  <section>
+    <h2>Our Flavours</h2>
+    <div class="flavor">
+      <h3>Classic Kombucha</h3>
+      <p>Pure, fizzy, and full of life - this is kombucha in its truest form. Perfect for your daily gut glow.</p>
     </div>
-    <ul class="benefits">
-      <li>✨ Improves Digestion</li>
-      <li>🧠 Boosts Mood & Energy</li>
-      <li>🛡 Strengthens Immunity</li>
-      <li>🌿 100% Natural & Raw</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2 class="section-title">How It's Brewed</h2>
-    <p>We brew our kombucha with the finest local tea leaves and real fruits sourced directly from Arunachal’s farms. Each batch is fermented with a healthy SCOBY (Symbiotic Culture of Bacteria & Yeast) over 336 hours (14 days) for a naturally fizzy, tangy, and refreshing drink. No artificial sweeteners, just nature in a bottle.</p>
-  </section>
-
-  <section>
-    <h2 class="section-title">Product Info</h2>
-    <ul>
-      <li>MRP: ₹120</li>
-      <li>Quantity: 180ml</li>
-      <li>Shelf life: 3 weeks (Keep refrigerated)</li>
-      <li>FSSAI License Approved</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2 class="section-title">Why Arunachal?</h2>
-    <p>Our pristine environment and clean mountain air make Arunachal one of the best places in India to craft kombucha. Mamon Brews is proud to support local farmers and bring the flavors of the Northeast to the world.</p>
-  </section>
-
-  <footer>
-    <p>Contact Us:</p>
-    <p class="contact-info">
-      📞 <a href="tel:+91762982324243">+91 76298 23242</a><br>
-      📧 <a href="mailto:mamonbrews@gmail.com">mamonbrews@gmail.com</a>
+    <div class="flavor">
+      <h3>Bay Leaf Kombucha</h3>
+      <p>Aromatic and grounding. Bay leaves from the wilds of Arunachal meet fermented fizz for a bold brew.</p>
+    </div>
+    <div class="flavor">
+      <h3>Ginger Lemon Kombucha</h3>
+      <p>Zesty, spicy, and revitalizing - this one packs a healthy punch with every sip.</p>
+    </div>
+    <div class="flavor">
+      <h3>Mango Kombucha (Seasonal)</h3>
+      <p>Sun-ripened local mangoes turned bubbly bliss. Only available while the season lasts!</p>
+    </div>
+    <a class="menu-button" href="Mamon_Brews_Menu.pdf" download>📄 Download Menu</a>
+  </section>  <section>
+    <h2>Why Arunachal?</h2>
+    <p>
+      Nestled in the lush hills and rich biodiversity, Arunachal Pradesh provides the perfect natural habitat for brewing high-quality kombucha.
+      Clean air, pure spring water, and local organic herbs make every batch unique and healthy.
     </p>
-    <p>Follow us on Instagram @mamonbrews</p>
+  </section>  <section>
+    <h2>Fun Facts About Kombucha</h2>
+    <ul>
+      <li>Kombucha originated over 2000 years ago in East Asia.</li>
+      <li>It's made using a living culture called SCOBY.</li>
+      <li>Kombucha is naturally carbonated and filled with probiotics.</li>
+      <li>It’s a healthy alternative to sugary sodas and alcohol.</li>
+    </ul>
+  </section>  <section class="newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <form>
+      <input type="email" placeholder="Your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>  <footer>
+    <p>Order via Instagram or WhatsApp</p>
+    <a class="contact-button" href="https://wa.me/91762982324243">WhatsApp</a>
+    <a class="contact-button" href="https://www.instagram.com/mamoon.brews/">Instagram</a>
+    <p>Email: mamonbrews@gmail.com</p>
+    <p>&copy; 2025 Mamon Brews. All rights reserved.</p>
   </footer>
-</body>
-</html>
+</body></html>
